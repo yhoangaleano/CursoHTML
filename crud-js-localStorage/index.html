@@ -1,0 +1,102 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <meta charset="utf-8">
+    <title>CRUD LocalStorage js</title>
+    <link rel="stylesheet" href="css/estilos.css">
+    <script type="text/javascript" src="http://code.jquery.com/jquery-2.1.4.min.js"></script>
+    <link href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.4/css/bootstrap.min.css" rel="stylesheet">
+</head>
+
+<body>
+
+    <div class="container">
+
+        <div class="jumbotron">
+            <h2> Finca Berriondo <small>Gestión de jornaleros</small></h2>
+
+            <div class="row">
+
+                <div class="col-md-6">
+                    <p class="modo"> <span class="glyphicon glyphicon-plus"></span>Agregar jornalero</p>
+                    
+                    <div class="row">
+                        <div class="col-md-12">
+                            <div class="mensaje-alerta">
+                            </div>
+                        </div>
+                    </div>
+
+                    <form id="jornalero-form">
+
+                        <div class="form-group">
+                            <input type="hidden" id="id">
+                        </div>
+
+                        <div class="form-group">
+                            <label for="nombre">Nombre</label>
+                            <input  class="form-control" type="text" id="nombre" placeholder="Ejm: Yhoan Galeano">
+                        </div>
+
+                        <div class="form-group">
+                            <label for="correo">Correo</label>
+                            <input  class="form-control" type="email" id="correo" placeholder="Ejm: yhoangaleano@gmail.com">
+                        </div>
+
+                        <div class="form-group">
+                            <label for="peso">Peso (kg)</label>
+                            <input  class="form-control" type="number" id="peso" placeholder="Ejm: 75">
+                        </div>
+
+                        <div class="form-group">
+                            <label for="fecha_nacimiento">Fecha de nacimiento</label>
+                            <input  class="form-control" type="date" id="fecha_nacimiento" placeholder="Ejm: 05/07/1993">
+                        </div>
+
+                        <div class="form-group">
+                            <input type="button" id="btnGuardar" class="btn btn-success" value=" Guardar">
+                        </div>
+
+                    </form>
+
+
+
+                    <div id="numeroJornaleros">
+                    </div>
+                </div>
+
+                <div class="col-md-6">
+                    <img style=" width:100%" src="img/jornalero.jpg" alt="" />
+                </div>
+
+            </div>
+        </div>
+
+        <div class="row">
+
+            <div class="col-md-12">
+                <div class="table-responsive">
+                    <table class="table table-hover" id="dbJornaleros-list">
+                        <thead>
+                            <tr> 
+                                <th>ID</th>
+                                <th>Nombre</th> 
+                                <th>Correo</th> 
+                                <th>Peso</th> 
+                                <th>Fecha Nacimiento</th> 
+                                <th></th> 
+                                <th></th> 
+                            </tr> 
+                        </thead> 
+                        <tbody> 
+                        </tbody>
+                    </table>
+                </div>
+            </div>
+        </div>
+
+    </div>
+    
+</body>
+<script type="text/javascript" src="js/funciones.js"></script>
+</html>
