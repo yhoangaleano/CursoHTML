@@ -60,12 +60,6 @@ Referencias a clases de Bootstrap `container` y `col-md-x`
 
 ![Mockups](http://i.imgur.com/vEfkY52.png)
 
-### Identificar si estas Online o no
-
-```js
-navigator.onLine
-```
-
 ### Ejercicios
 
 - Aclaración sobre comparadores lógicos
@@ -150,4 +144,10 @@ array;  // ["uno", "dos", "tres", "cuatro"]
 
 ```js
 localStorage.clear();
+```
+
+### Identificar si estas Online o no
+
+```js
+navigator.onLine
 ```
