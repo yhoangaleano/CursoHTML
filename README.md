@@ -65,7 +65,6 @@ Referencias a clases de Bootstrap `container` y `col-md-x`
 
 navigator.onLine
 
-```js
 ### Ejercicios
 
 - Aclaración sobre comparadores lógicos
