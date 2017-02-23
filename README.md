@@ -151,3 +151,5 @@ localStorage.clear();
 ```js
 navigator.onLine
 ```
+### Web SQL
+http://slides.com/yhoanandresgaleanourrea/websql#/
